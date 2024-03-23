@@ -1,0 +1,746 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+a[class] {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+
+@font-face {
+    font-family: 'New-YorkerC';
+    src: url('../gonts/new-yorkerc-webfont.woff');
+    src: url('../gonts/new-yorkerc-webfont.woff2');
+    font-weight: 400px;
+    font-display: swap;
+}
+
+.container {
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url('../images/header_bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: 60px;
+
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__list-item+.menu__list-item {
+    margin-left: 40px;
+}
+
+.menu__list-item {
+    padding: 6.5px 0;
+}
+
+.menu__list-info+.menu__list-info {
+    margin-left: 20px;
+}
+
+.kok {
+    margin-left: 40px;
+}
+
+.menu__list-link {
+    font-family: 'Montserrat', sans-serif;
+    color: #f3f3f3;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu__list-link:hover {
+    color: #82A082;
+}
+
+.header__content-inner {
+    margin-top: 116px;
+}
+
+.header__titel {
+    color: #1F1E1E;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 140%;
+    font-family: 'New-YorkerC';
+    max-width: 527px;
+    margin-bottom: 40px;
+}
+
+.text__header {
+    color: #f3f3f3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 413px;
+    margin-bottom: 40px;
+}
+
+.button__header {
+    padding: 18px 68px;
+    border: none;
+    color: #f3f3f3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #82A082;
+    border-radius: 50px;
+}
+
+.button__header:hover {
+    background-color: #6A726A;
+}
+
+.button__header:active {
+    background-color: #2B302B;
+}
+
+
+
+.info {
+    padding: 150px 0;
+}
+
+.title__info {
+    color: #82A082;
+    font-family: 'New-YorkerC';
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    padding-bottom: 100px;
+}
+
+.info-inner {
+    display: flex;
+
+}
+
+.info-inner-top {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-right: 100px;
+}
+
+.info-inner-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+
+}
+
+.info__text-hub {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    max-height: 322px;
+}
+
+.info__text {
+    max-width: 500px;
+    max-height: 322px;
+}
+
+.text__info {
+    padding-bottom: 25px;
+    color: #1F1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+.trainer {
+    background-color: #CACEC8;
+    padding: 100px 0;
+
+}
+
+.trainer__items {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.star__trener {
+    position: relative;
+}
+
+.trainer__item {
+    position: relative;
+}
+
+.star__right {
+    position: absolute;
+    top: -63px;
+    right: -69px;
+}
+
+.star__left {
+    position: absolute;
+    top: -63px;
+    left: -69px;
+}
+
+.title__treiner {
+    color: #1F1E1E;
+    font-family: 'New-YorkerC';
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+
+.trainer__name {
+    color: #1F1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 24px 0 7px;
+
+}
+
+.treiner__posihon {
+    color: #1F1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.star-trener-2 {
+    position: absolute;
+    left: 333px;
+    bottom: -185px;
+
+}
+
+.star-trener-1 {
+    position: absolute;
+    right: 333px;
+    bottom: -185px;
+}
+
+
+
+
+.schedule {
+    padding: 158px 0 68px;
+}
+
+
+
+.title__schedule {
+    color: #82A082;
+    font-family: 'New-YorkerC';
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+
+.items__sheduls {
+    border-bottom: 1px solid #82A082;
+    display: grid;
+    border-top: 1px solid #82A082;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.items__sheduls-2 {
+    display: grid;
+    border-bottom: 1px solid #82A082;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.time {
+    text-align: center;
+}
+
+.text_xata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text__sheduld {
+    padding: 28px 0 20px;
+    color: #1F1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.Season__tickets {
+    padding: 0 0 136px;
+}
+
+.title__season {
+    color: #82A082;
+    font-family: 'New-YorkerC';
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.Season__tickets-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Season__tickets-item {
+    border: 2px solid #82A082;
+    border-radius: 50px;
+    padding: 50px 60px;
+    max-width: 333px;
+    max-width: 336px;
+    text-align: center;
+    position: relative;
+}
+
+.title__price {
+    color: #82A082;
+    font-family: 'New-YorkerC';
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.price__item {
+    color: #1F1E1E;
+    font-family: 'New-YorkerC';
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 50px;
+
+}
+
+.text__price {
+    color: #1F1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 7px;
+
+}
+
+.text__poisnenie {
+    color: #1F1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.stars {
+    position: relative;
+}
+
+.img__right__price {
+    position: absolute;
+    left: 302px;
+    bottom: -2582px;
+}
+
+.img__left__price {
+    position: absolute;
+    right: 302px;
+    bottom: -2582px;
+}
+
+
+.star__ticets_price_center {
+    position: relative;
+}
+
+.star__ticets_price_center-1 {
+    position: absolute;
+    left: 341px;
+    bottom: -180px;
+}
+
+.star__ticets_price_center-2 {
+    position: absolute;
+    right: 341px;
+    bottom: -180px;
+}
+
+
+
+.Reviews {
+    padding: 100px 0 129px;
+    background-color: #CACEC8;
+}
+
+.titel__Reviews {
+    color: #1F1E1E;
+    font-family: 'New-YorkerC';
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 100px;
+
+}
+
+.Reviews__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Reviews__item {
+    background-color: #f3f3f3;
+    padding: 36px 41px 36px;
+    border-radius: 50px;
+    max-width: 323px;
+    max-height: 373px;
+}
+
+.Reviews__item__fuk {
+    display: flex;
+    justify-content: last baseline;
+    gap: 20px;
+}
+
+.name__item {
+    color: #1F1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.name__item-yeasr {
+    color: #1F1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.text__Reviews__item {
+    color: #1F1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 34px;
+    max-width: 241px;
+    max-height: 177px;
+}
+
+
+
+.stars_Reviews {
+    position: relative;
+}
+
+.img_swag_green-1 {
+    position: absolute;
+    left: -70px;
+    bottom: -33px;
+}
+
+
+.img_swag_beloe-2 {
+    position: absolute;
+    right: -70px;
+    bottom: -33px;
+}
+
+
+.star__rewieas_center{
+    position: relative;
+}
+
+.img_swag_green {
+   position: absolute;
+   right: 330px;
+   bottom: -198px;
+
+}
+
+
+.img_swag_beloe {
+    position: absolute;
+    left: 330px;
+    bottom: -198px;
+}
+
+
+
+
+.map {
+    padding: 125px 0 118px;
+}
+
+.map__inner {
+    display: flex;
+    gap: 75px;
+    justify-content: space-between;
+}
+
+.img__from__foto {
+    max-width: 580px;
+    height: 100%;
+}
+
+.name__butonn {
+    border: none;
+    color: #1F1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding: 26px 203px;
+    border: 2px solid #82A082;
+    border-radius: 50px;
+    margin-bottom: 33px;
+}
+
+.name__butonn__spisok {
+    border: none;
+    color: #1F1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding: 26px 0px;
+    border: 2px solid #82A082;
+    border-radius: 50px;
+    margin-bottom: 33px;
+    width: 100%;
+}
+
+.button__map {
+    padding: 26px 0px;
+    width: 100%;
+    border: none;
+    color: #f3f3f3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #82A082;
+    border-radius: 50px;
+}
+
+
+.map__contact {
+    max-width: 50px;
+    max-height: 40px;
+}
+
+
+
+.contact {
+    padding: 32px 0 47px;
+}
+
+
+.contact__right__map {
+    border: none;
+    width: 494px;
+    height: 271px;
+    border-radius: 50px;
+}
+
+
+.contact-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number__contact {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    max-height: 322px;
+}
+
+
+
+
+.title__contact {
+    color: #82A082;
+    font-family: 'New-YorkerC';
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 23px;
+
+}
+
+
+.ifo_ghty {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ifo_social {
+    display: flex;
+    max-width: 145px;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+
+.info__text-hub-1 {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    max-height: 322px;
+    margin-top: 40px;
+}
+
+.info__text {
+    max-width: 500px;
+    max-height: 322px;
+}
+
+.text__info {
+    padding-bottom: 25px;
+    color: #1F1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info-inner-bottom-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.stars__last {
+    position: relative;
+}
+
+
+.star_left_map_1 {
+    position: absolute;
+    left: -59px;
+    bottom: -39px;
+}
+
+.star_left_map_2 {
+    position: absolute;
+    left: 300px;
+    bottom: -161px;
+
+}
+
+.star_right_map_1 {
+    position: absolute;
+    right: -79px;
+    bottom: -280px;
+}
+
+
+.star_right_map_2 {
+    position: absolute;
+    right: 502px;
+    bottom: -40px;
+}
+
+
+.footer {
+    padding: 60px 0 120px;
+    background-color: #CACEC8;
+}
+
+.logo__footer {
+    margin-bottom: 55px;
+}
+
+.menu__item-footer,
+.menu__item-footer-link {
+    color: #1F1E1E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer__items-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 145px;
+}
+
+.menu__item-footer {
+    margin-bottom: 24px;
+}
+
+
+.spisok_soc_set {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: end;
+}
+
+
